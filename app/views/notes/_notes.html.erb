@@ -1,6 +1,6 @@
 <% notes.each do |note| %>
   <div class="note-card">
     <p><%= note.body %></p>
-    <date><%= note.created_at.to_s(:short) %></date>
+    <date><%= note.posted_at.to_s(:short) %></date>
   </div>
 <% end %>
