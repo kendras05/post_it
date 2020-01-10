@@ -9,7 +9,7 @@
 require 'faker'
 
 100.times do |num|
-  body = Faker::Hipster.sentences
+  body = Faker::Hipster.sentences.join(" ")
   hidden = [ true, false].sample
   posted_at = Faker::Date.between(from: 2.years.ago, to: Date.today)
 
