@@ -1,0 +1,6 @@
+<%= form_for(@note) do |f| %>
+
+  <%= render("note_form", form_thing:f) =%>
+  <%= f.submit("Save") %>
+
+<% end %>
