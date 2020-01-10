@@ -4,4 +4,23 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+#   Character.create(name: 'Luke', movie: movies.first
+#
+require 'faker'
+
+100.times do |num|
+  body = Faker::Hipster.sentences
+  hidden = [ true, false].sample
+  posted_at = Faker::Date.between(from: 2.years.ago, to: Date.today)
+
+#   puts body
+#   puts hidden
+#   puts posted_at
+
+
+  Note.create({
+    hidden: hidden,
+    posted_at: posted_at,
+    body: body
+  })
+end
