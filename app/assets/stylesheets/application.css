@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+
+.note-card  {
+ 
+ background-image: url("sticky.png");
+ width: 800px;
+ height: 800px;
+ text: relative;
+ }
